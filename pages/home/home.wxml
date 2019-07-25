@@ -1,2 +1,23 @@
 <!--pages/home/home.wxml-->
-<text>hello world</text>
+<!-- 删除当前行ctrl + x -->
+<!-- 当前行代码上下移动:  alt + ↑↓ -->
+<!-- 向上向下复制一行:    Shift+Alt+  ↑↓ -->
+<!-- 注释/打开当前行: ctrl + / -->
+<!-- 选中当前行: Ctrl+i -->
+<!-- 格式化代码: Alt+Shift+f -->
+<!-- 移动到文件结尾:  Ctrl+End 移动到文件开头: Ctrl+Home-->
+<!-- 选择从光标到行尾: Shift+End 选择从行首到光标处: Shift+Home-->
+<!-- 移动到下一行: ctrl + shift+ enter 移动到上一行: ctrl + Enter-->
+<!-- 当前代码向下移动一行: shift + enter 向上向下复制一行 : Shift+Alt+Up，Shift+Alt+Down-->
+
+<!-- 1.小程序的数据绑定:{{}} -> Mustache -->
+<view>Hello {{name}}</view>
+<view>我的年龄：{{age}}</view>
+
+<!-- 2.列表展示: wx:for -->
+<view wx:for="{{students}}">{{item.name}}的年龄：{{item.age}}</view>
+
+<!-- 3.事件监听改变data -->
+<view>当前计数: {{counter}}</view>
+<button size="mini" bindtap="handleBtnClickAdd">+</button>
+<button size="mini" bindtap="handleBtnClickSubtraction">-</button>
