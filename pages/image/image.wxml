@@ -1,0 +1,22 @@
+<!--pages/image/image.wxml-->
+
+<!-- 1.基本使用 -->
+<!-- 重点: (1).image组件可以写成单标签，也可以写成双标签 -->
+<!-- 重点: (2).image组件默认大小: 320*240 -->
+<!-- 重点: (3).image组件是一个行内块级元素 -->
+
+<!-- 2.src: 本地路径(相对路径/绝对路径)/远程地址 -->
+<image src='../../assets/test/dlwlrma.jpg'/>
+<image src='/assets/test/dlwlrma.jpg'/>
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564301218957&di=8a38444466d33fbbfa9356a489e302e9&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201810%2F20%2F20181020072601_hpdtw.jpeg'/>
+
+<!-- 补充: 显示相册中的图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"/>
+
+<!-- 3.bindload: 监听图片加载完成lazy-load: 懒加载 -->
+<image wx:for="{{6}}"
+src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564302817027&di=60ce26ca25ee7d0595c1032bae0c76b7&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F58%2F03%2F28300543064448149905035478460_950.jpg" bindload="handleImageLoad" lazy-load></image>
+
+<!-- 4.show-menu-by-longpress: 长按识别图片 -->
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564303305015&di=4a16b1a07bccb90a318bca82735bf921&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201607%2F13%2F20160713110220_ZvQRi.thumb.700_0.jpeg' show-menu-by-longpress></image>

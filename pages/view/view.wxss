@@ -1,0 +1,23 @@
+/* pages/view/view.wxss */
+
+.class1 {
+  background: purple;
+  width: 100px;
+  height: 100px;
+}
+
+.view1 {
+  background: orange;
+  font-size: 30px;
+}
+
+.class2 {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin-top: 20px;
+}
+
+.view2 {
+  background: green;
+}

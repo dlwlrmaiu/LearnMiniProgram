@@ -1,0 +1,22 @@
+<!--pages/input/input.wxml-->
+
+<!-- 1.基本使用 -->
+<input/>
+
+<!-- 2.value: input中的默认值 -->
+<input value="dlwlrma"/>
+
+<!-- 3.type: 决定键盘输入类型 -->
+<input type="text"/>
+
+<!-- 4.password -->
+<input password/>
+
+<!-- 5.placeholder -->
+<input placeholder="dlwlrma"/>
+
+<!-- 6.input绑定事件 -->
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"/>
+<text>{{data1}}</text>
