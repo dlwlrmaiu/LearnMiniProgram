@@ -1,0 +1,22 @@
+/* pages/wxss/wxss.wxss */
+
+/* 导入样式 */
+@import './style/view.wxss';
+
+.v1 {
+  color: blue;
+  font-size: 30px;
+}
+.content {
+  background: purple !important;
+}
+/* .view1 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+.view2 {
+  width: 200rpx;
+  height: 200rpx;
+  background: purple;
+} */

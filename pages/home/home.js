@@ -7,60 +7,44 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleBtnClick:function() {
+    console.log("按钮发生了点击")
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTouchStart:function() {
+    console.log("handleTouchStart")
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchMove: function () {
+    console.log("handleTouchMove")
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleTouchEnd: function () {
+    console.log("handleTouchEnd")
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleTap: function () {
+    console.log("handleTap")
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  handleLongPress: function () {
+    console.log("handleLongPress")
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  handleEventClick:function(event) {
+    console.log('------',event)
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 事件冒泡和事件捕获
+  handleCaptureView1:function() {
+    console.log('handleCaptureView1')
+  },
+  handleTapView1: function () {
+    console.log('handleTapView1')
+  },
+  handleCaptureView2: function () {
+    console.log('handleCaptureView2')
+  },
+  handleTapView2: function () {
+    console.log('handleTapView2')
+  },
+  handleCaptureView3: function () {
+    console.log('handleCaptureView3')
+  },
+  handleTapView3: function () {
+    console.log('handleTapView3')
   }
 })

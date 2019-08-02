@@ -1,0 +1,14 @@
+//只能写js代码es5或以前的版本
+var message = "hello world";
+var name = "dlwlrma";
+
+var sum = function(num1, num2) {
+  return num1 + num2
+}
+
+//commonjs的模块化导出的写法
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum
+}
