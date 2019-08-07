@@ -1,2 +1,20 @@
 <!--pages/home/home.wxml-->
-<text>hello world</text>
+<!-- 1.展示轮播图 -->
+<d-swiper list="{{banners}}"/>
+
+<!-- 2.推荐数据的展示 -->
+<d-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad"/>
+
+<!-- 3.展示本周流行 -->
+<d-popular/>
+
+<!-- 4.tab-control -->
+<d-tab-control class="{{isTabFixed ? 'fixed':''}}" id="tab-control" titles="{{titles}}" bind:tabclick="handleTabClick"/>
+<d-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+
+<!-- 5.展示商品数据 -->
+<d-goods goods="{{goods[currentType].list}}"/>
+
+<!-- 6.回到顶部 -->
+<!-- hidden: hidden属性对于自定义组件没有效果 -->
+<d-back-top wx:if="{{showBackTop}}"/>
